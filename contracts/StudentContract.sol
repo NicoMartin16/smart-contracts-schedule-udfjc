@@ -16,13 +16,14 @@ contract StudentContract {
 
     uint private studentCounter = 0;
 
-    mapping(uint => Student) private students;
+    mapping(uint => Student) public students;
 
     event StudentAdded(uint id, string name, string documentNumber);
 
     function addStudent(string memory _documentType,string memory _documentNumber,string memory _name,string memory _dateOfBirth,string memory _email,string memory _phone,string memory _direction) public {
         studentCounter++;
-        students[studentCounter] = Student(studentCounter,_documentType,_documentNumber,_name,_dateOfBirth,_email,_phone,_direction,new uint[](0));
+        uint studentId = studentCounter;
+        students[studentId] = Student(studentId,_documentType,_documentNumber,_name,_dateOfBirth,_email,_phone,_direction,new uint[](0));
         emit StudentAdded(studentCounter, _name, _documentNumber);
     }
 
