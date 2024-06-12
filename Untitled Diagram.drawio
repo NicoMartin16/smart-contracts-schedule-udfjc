@@ -1,4 +1,4 @@
-<mxfile modified="2024-06-12T00:56:32.326Z" host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="lvl_2a8M3x9AqCaUGelm" version="24.5.3" type="github">
+<mxfile modified="2024-06-12T01:59:56.168Z" host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="-PQVeNPnRdfEbRRkOeag" version="24.5.3" type="github">
   <diagram id="eIo0H9kK7ql945uVP1NC" name="Page-1">
     <mxGraphModel dx="1427" dy="820" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="413" pageHeight="583" math="0" shadow="0">
       <root>
@@ -31,9 +31,6 @@
         <mxCell id="I7pD8eVxMmkq9WQ-3Rgj-18" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=1;exitY=1;exitDx=0;exitDy=0;exitPerimeter=0;entryX=0.012;entryY=0.369;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="I7pD8eVxMmkq9WQ-3Rgj-5" target="I7pD8eVxMmkq9WQ-3Rgj-8">
           <mxGeometry relative="1" as="geometry" />
         </mxCell>
-        <mxCell id="I7pD8eVxMmkq9WQ-3Rgj-21" value="&amp;lt;&amp;lt;Extends&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
-          <mxGeometry x="430" y="275" width="60" height="30" as="geometry" />
-        </mxCell>
         <mxCell id="I7pD8eVxMmkq9WQ-3Rgj-23" value="&amp;lt;&amp;lt;Extends&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
           <mxGeometry x="450" y="335" width="60" height="30" as="geometry" />
         </mxCell>
@@ -45,6 +42,9 @@
         </mxCell>
         <mxCell id="I7pD8eVxMmkq9WQ-3Rgj-8" value="Gestionar horario academico" style="ellipse;whiteSpace=wrap;html=1;" vertex="1" parent="I7pD8eVxMmkq9WQ-3Rgj-24">
           <mxGeometry x="200" y="215" width="140" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="I7pD8eVxMmkq9WQ-3Rgj-21" value="&amp;lt;&amp;lt;Extends&lt;span style=&quot;background-color: initial;&quot;&gt;&amp;gt;&amp;gt;&lt;/span&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="I7pD8eVxMmkq9WQ-3Rgj-24">
+          <mxGeometry x="320" y="192" width="60" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
