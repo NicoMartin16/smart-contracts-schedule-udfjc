@@ -14,7 +14,7 @@ contract StudentContract {
         uint[] coursesIds;
     }
 
-    uint private studentCounter = 0;
+    uint public studentCounter = 0;
 
     mapping(uint => Student) public students;
 
