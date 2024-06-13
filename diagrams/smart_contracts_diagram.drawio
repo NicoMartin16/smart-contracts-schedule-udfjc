@@ -1,9 +1,76 @@
-<mxfile host="app.diagrams.net" modified="2024-06-13T15:41:49.648Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" version="24.5.4" etag="dsKGBhpGf7gln0ed2_7Y" type="github">
+<mxfile host="app.diagrams.net" modified="2024-06-13T16:38:40.120Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/125.0.0.0 Safari/537.36" etag="rM26pmH6D16alFN_hMi7" version="24.5.4" type="github">
   <diagram name="Page-1" id="8Z3PD3Q-81h_M_HOh9sJ">
-    <mxGraphModel>
+    <mxGraphModel dx="1195" dy="615" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1654" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-1" value="CourseContract" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="290" width="260" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-2" value="+ id: Integer&lt;br&gt;+ name: String&lt;div&gt;+ description: String&lt;br&gt;+ schedule: String&lt;br&gt;+ professorId: Integer&lt;br&gt;+ roomId: Integer&lt;br&gt;+ students: Student&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rQdE_K5qBbuqWPv1BPS1-1">
+          <mxGeometry y="26" width="260" height="114" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-3" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="rQdE_K5qBbuqWPv1BPS1-1">
+          <mxGeometry y="140" width="260" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-4" value="+ addCourse(Course): void&lt;div&gt;+ assignSchedule(Integer,Integer): void&lt;br&gt;+ getCourseDetails(Integer): void&lt;br&gt;+ getStudentsSchedule(Integer): void&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rQdE_K5qBbuqWPv1BPS1-1">
+          <mxGeometry y="148" width="260" height="72" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-5" value="RoomContract" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="480" y="30" width="220" height="190" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-6" value="+ id: Integer&lt;br&gt;+ name: String&lt;br&gt;+ description: String&lt;br&gt;+ capacity: Integer" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rQdE_K5qBbuqWPv1BPS1-5">
+          <mxGeometry y="26" width="220" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-7" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="rQdE_K5qBbuqWPv1BPS1-5">
+          <mxGeometry y="100" width="220" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-8" value="+ addRoom(Room): void&lt;br&gt;+ updateRoom(Room): void&lt;br&gt;+ getRoom(Integer): void&lt;br&gt;+ getRoomDetail(Integer): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rQdE_K5qBbuqWPv1BPS1-5">
+          <mxGeometry y="108" width="220" height="82" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-9" value="ProfessorContract" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="130" y="320" width="230" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-10" value="+ id: Integer&lt;div&gt;+ documentType: String&lt;br&gt;+ documentNumber: String&lt;br&gt;+ name: String&lt;br&gt;+ lastName: String&lt;br&gt;+ dateOfBirth: String&lt;/div&gt;&lt;div&gt;+ email: String&lt;br&gt;+ phone: String&lt;br&gt;+ address: String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rQdE_K5qBbuqWPv1BPS1-9">
+          <mxGeometry y="26" width="230" height="134" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-11" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="rQdE_K5qBbuqWPv1BPS1-9">
+          <mxGeometry y="160" width="230" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-12" value="+ addProfessor(Professor): void&lt;br&gt;+ getProfessor(Integer): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rQdE_K5qBbuqWPv1BPS1-9">
+          <mxGeometry y="168" width="230" height="42" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-13" value="StudentContract" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="810" y="315" width="270" height="220" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-14" value="+ id: Integer&lt;div&gt;+ documentType: String&lt;br&gt;+ documentNumber: String&lt;br&gt;+ name: String&lt;br&gt;+ dateOfBirth: String&lt;/div&gt;&lt;div&gt;+ email: String&lt;br&gt;+ phone: String&lt;br&gt;+ address: String&lt;/div&gt;" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rQdE_K5qBbuqWPv1BPS1-13">
+          <mxGeometry y="26" width="270" height="124" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-15" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="rQdE_K5qBbuqWPv1BPS1-13">
+          <mxGeometry y="150" width="270" height="8" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-16" value="+ addStudent(Student): void&lt;br&gt;+ getStudentsCourses(Integer): []Integer&lt;br&gt;+ assignCourseToStudent(Integer,Integer): void" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="rQdE_K5qBbuqWPv1BPS1-13">
+          <mxGeometry y="158" width="270" height="62" as="geometry" />
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-21" value="1" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;entryX=1;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" source="rQdE_K5qBbuqWPv1BPS1-2" target="rQdE_K5qBbuqWPv1BPS1-10">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="380" y="400" as="sourcePoint" />
+            <mxPoint x="540" y="400" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-22" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=1;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;" edge="1" parent="1" source="rQdE_K5qBbuqWPv1BPS1-1" target="rQdE_K5qBbuqWPv1BPS1-5">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="520" y="260" as="sourcePoint" />
+            <mxPoint x="680" y="260" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="rQdE_K5qBbuqWPv1BPS1-23" value="" style="endArrow=open;html=1;endSize=12;startArrow=diamondThin;startSize=14;startFill=0;edgeStyle=orthogonalEdgeStyle;align=left;verticalAlign=bottom;rounded=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;entryX=-0.004;entryY=0.558;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="rQdE_K5qBbuqWPv1BPS1-2" target="rQdE_K5qBbuqWPv1BPS1-14">
+          <mxGeometry x="-1" y="3" relative="1" as="geometry">
+            <mxPoint x="520" y="330" as="sourcePoint" />
+            <mxPoint x="680" y="330" as="targetPoint" />
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
