@@ -33,11 +33,11 @@ contract CourseContract is StudentContract, ProfessorContract, RoomContract {
         emit CourseAdded(courseCounter, _name);
     }
 
-    function assignSchedule(uint _studentId, uint _courseId) public {
-        require(students[_studentId].id != 0, "Invalid student id");
+    function assignSchedule(address _studentAddress, uint _courseId) public {
+        require(students[_studentAddress].addressStudent != address(0), "Invalid student does not exist");
         require(courses[_courseId].id != 0, "Invalid course id");
 
-        assignCourseToStudent(_studentId, _courseId);
+        assignCourseToStudent(_studentAddress, _courseId);
     }
 
     function getCourseDetails(uint _courseId) public view returns (string memory, string memory, string memory, string memory, string memory) {
@@ -48,9 +48,9 @@ contract CourseContract is StudentContract, ProfessorContract, RoomContract {
         return (course.name, course.description, course.schedule, professorName, roomName);
     }
 
-    function getStudentSchedule(uint _studentId) public view returns (string memory) {
-        require(_studentId > 0 && _studentId <= studentCounter, "Invalid student id");
-        uint[] memory coursesIds = students[_studentId].coursesIds;
+    function getStudentSchedule(address _studentAddress) public view returns (string memory) {
+         require(students[_studentAddress].addressStudent != address(0), "Invalid student does not exist");
+        uint[] memory coursesIds = students[_studentAddress].coursesIds;
         string memory schedule = "";
         for (uint i = 0; i < coursesIds.length; i++) {
             Course memory course = courses[coursesIds[i]];
