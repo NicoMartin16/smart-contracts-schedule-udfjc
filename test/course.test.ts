@@ -1,0 +1,9 @@
+
+
+describe("CourseContract", () => {
+
+    beforeEach(async() => {
+        
+    })
+
+});
